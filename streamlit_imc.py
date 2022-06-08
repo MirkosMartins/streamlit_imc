@@ -23,11 +23,14 @@ if st.button('Calcular IMC'):
     st.write('O imc calculado foi de: ',imc)
     if imc<18.5:
         st.image('abaixoPeso.jpg')
+        st.write('Abaixo do peso.')
     else:
         if imc>25:
             st.image('acimaPeso.jpg')
+            st.write('Acima do peso.')
         else:
             st.image('imcNormal.jpg')
+            st.write('No peso ideal.')
 else:
     st.write('IMC ainda não calculado')
 
