@@ -17,8 +17,8 @@ st.text_input("Digite sua altura (em metros)",key='altura')
 st.text_input('Digite seu peso: (em kg)',key='peso')
 
 if st.button('Calcular IMC'):
-    altura = float(st.session_state.altura)
-    peso = float(st.session_state.peso)
+    altura = float(st.session_state.altura.replace(',','.'))
+    peso = float(st.session_state.peso.replace(',','.'))
     imc = peso/(altura*altura)
     st.write('O imc calculado foi de: ',imc)
     if imc<18.5:
