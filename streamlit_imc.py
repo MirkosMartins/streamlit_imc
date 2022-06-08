@@ -13,8 +13,8 @@ altura=1
 peso=1
 st.title('IMC calculator:')
 
-st.text_input("Digite sua altura ",key='altura')
-st.text_input('Digite seu peso: ',key='peso')
+st.text_input("Digite sua altura (em metros)",key='altura')
+st.text_input('Digite seu peso: (em kg)',key='peso')
 
 if st.button('Calcular IMC'):
     altura = float(st.session_state.altura)
